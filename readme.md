@@ -2,6 +2,7 @@
 
 Código gerado no primeiro bootcamp da code-red. 
 Trablhando com a lading page do [website](http://codered.online/)
+Durante o evento alguns tópicos foram levantados e alguns sites foram citados. Segue a lista dos links levantados durante o evento. 
 
 
 ## Html Elementos semanticos
