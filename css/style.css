@@ -27,6 +27,7 @@ h1{
 
 
 
+
 .apresentacao{
 	width: 100%;
 	height: calc(100% + 170px);
@@ -42,10 +43,14 @@ h1{
 	background: rgba(255, 255, 255, .2);
 	z-index: 2;
 	color: #fff;
+	font-size: .9em;
 }
 .apresentacao__navegacao .conteudo{
 	padding-top: 8px;
 	padding-bottom: 8px;
+}
+.apresentacao__social{
+	float: right;
 }
 .apresentacao__link{
 	text-decoration: none;
@@ -53,7 +58,7 @@ h1{
 	margin-right: 20px;
 }
 .apresentacao__link img{
-	width: 16px;
+	width: 13px;
 }
 
 .apresentacao > .conteudo{

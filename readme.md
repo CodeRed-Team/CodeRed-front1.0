@@ -34,3 +34,6 @@ https://autoprefixer.github.io/
 
 ## Saber se pode usar css
 https://caniuse.com/
+
+## Meta tags
+https://www.w3schools.com/tags/tag_meta.asp
