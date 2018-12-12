@@ -1,18 +1,17 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
 <head>
-	<title>Code.Red</title>
+	<title>{{ page.title }}</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Somos uma comunidade empenhada em criar um ambiente saudável, instigante e divertido onde todos podem aprender a programar.">
   	<meta name="keywords" content="Bootcamp,CodeDojo,Hachathon,Programação,Meetup">
   	<meta name="author" content="Code.Red">
   	<meta name="theme-color" content="#414C5A">
-	
 
-	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">	
-</head> 
+
+	<link href="{{ '/assets/css/style.css' }}" rel="stylesheet">
+</head>
 <body>
 
 	<header class="apresentacao">
@@ -43,7 +42,7 @@
 		<div class="conteudo">
 			<div class="apresentacao__descricao">
 				<h1 class="apresentacao__titulo">Code<span class="texto-vermelho">.Red</span></h1>
-				<p class="apresentacao__subtitulo typewrite" data-period="2000" 
+				<p class="apresentacao__subtitulo typewrite" data-period="2000"
 					data-type='[ "Bootcamp", "Hackathon", "CodeDojo" ]'>
 	    			<span class="wrap">B</span>
 				</p>
@@ -54,10 +53,9 @@
 				</span>
 			</div>
 		</div>
-		<video class="apresentacao__video" loop="" autoplay="" muted="" poster="img/coding.png">
-            <source type="video/webm" src="img/coding.webm">
-            <source type="video/mp4" src="img/coding.mp4">
-           	<img src="img/coding.png" alt="" />
+		<video class="apresentacao__video" loop="" autoplay="" muted="" poster="/assets/img/coding.png">
+            <source type="video/webm" src="/assets/mov/coding.webm">
+            <source type="video/mp4" src="/assets/mov/coding.mp4">
     	</video>
 	</header>
 
@@ -68,7 +66,7 @@
 				<div class="flip 1">
 					<div class="frente">
 						<div class="box1">
-							<img src="img/bootcamp.svg" alt="Bootcamp" width="100%" />							
+							<img src="/assets/img/bootcamp.svg" alt="Bootcamp" width="100%" />
 						</div>
 					</div>
 					<div class="fundo">
@@ -83,7 +81,7 @@
 				<div class="flip 2">
 					<div class="frente">
 						<div class="box1">
-							<img src="img/codedojo.svg" alt="CodeDojo" width="100%" />							
+							<img src="/assets/img/codedojo.svg" alt="CodeDojo" width="100%" />
 						</div>
 					</div>
 					<div class="fundo">
@@ -98,7 +96,7 @@
 				<div class="flip 3">
 					<div class="frente">
 						<div class="box1">
-							<img src="img/hackathon.svg" alt="Hackathon" width="100%" />							
+							<img src="/assets/img/hackathon.svg" alt="Hackathon" width="100%" />
 						</div>
 					</div>
 					<div class="fundo">
@@ -129,11 +127,8 @@
            	</div>
 		</div>
 	</footer>
-	
-	<script src="js/typewriter.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
-
+	<script src="/assets/js/typewriter.js"></script>
 	<script>
 		var flips = document.querySelectorAll(".flip");
 		for(var i = 0; i < flips.length; i++){
@@ -145,5 +140,6 @@
 		  });
 		}
 	</script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 </body>
 </html>
