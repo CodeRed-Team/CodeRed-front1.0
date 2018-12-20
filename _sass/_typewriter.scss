@@ -1,0 +1,19 @@
+.typewrite > .wrap {
+	//border-right: 2px solid #fff;
+}
+.typewrite > .wrap:after {
+	content: ' ';
+	padding-right: 3px;
+	border-right: 2px solid #fff;
+}
+.typewrite.writing > .wrap:after {}
+.typewrite.written > .wrap:after {
+	animation: blink .7s steps(2, start) infinite;
+}
+.typewrite.ereasing > .wrap:after {}
+
+@keyframes blink{
+  to {
+	 visibility: hidden;
+  }
+}

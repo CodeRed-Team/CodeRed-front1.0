@@ -1,0 +1,17 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: events
+title: Bootcamps
+---
+<ul>
+{% for event_hash in site.data.bootcamps %}
+	{% assign event = event_hash[1] %}
+	{% if event.show %}
+		<li>
+			{{ event.name }}
+		</li>
+	{% endif %}
+{% endfor %}
+</ul>

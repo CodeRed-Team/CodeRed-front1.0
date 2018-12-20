@@ -9,6 +9,9 @@
   	<meta name="author" content="Code.Red">
   	<meta name="theme-color" content="#414C5A">
 
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
 
 	<link href="{{ '/assets/css/style.css' }}" rel="stylesheet">
 </head>
@@ -17,10 +20,7 @@
 	<header class="apresentacao">
 		<nav class="apresentacao__navegacao">
 			<div class="conteudo">
-	            <a class="apresentacao__link" href="bootcamp.html">Bootcamps</a>
-				<a class="apresentacao__link" href="codedojo.html">CodeDojo</a>
-	            <a class="apresentacao__link" href="hachathon.html">Hachathon</a>
-	            <a class="apresentacao__link" href="equipe.html">Equipe</a>
+				{% include navigation.html %}
 	            <a class="apresentacao__link" href="entrar">Entrar</a>
 
 				<div class="apresentacao__social">
@@ -42,9 +42,10 @@
 		<div class="conteudo">
 			<div class="apresentacao__descricao">
 				<h1 class="apresentacao__titulo">Code<span class="texto-vermelho">.Red</span></h1>
-				<p class="apresentacao__subtitulo typewrite" data-period="2000"
-					data-type='[ "Bootcamp", "Hackathon", "CodeDojo" ]'>
-	    			<span class="wrap">B</span>
+				<p class="apresentacao__subtitulo">
+					$ <span class="typewrite" data-period="3000" data-type='[ "npm start bootcamp", "npm start hackathon", "npm start codingdojo" ]'>
+		    			<span class="wrap">B</span>
+					</span>
 				</p>
 			</div>
 			<div class="apresentacao__sobre">
@@ -116,10 +117,7 @@
 			<h1 class="rodape__titulo">Code<span class="texto-vermelho">.Red</span></h1>
 
 			<nav class="rodape__navegacao">
-                <a class="rodape__link" href="bootcamp.html">Bootcamps</a>
-				<a class="rodape__link" href="codedojo.html">CodeDojo</a>
-	            <a class="rodape__link" href="hachathon.html">Hachathon</a>
-	            <a class="rodape__link" href="equipe.html">Equipe</a>
+                {% include navigation.html %}
             </nav>
 
             <div class="rodape__saudacao">
@@ -129,17 +127,8 @@
 	</footer>
 
 	<script src="/assets/js/typewriter.js"></script>
-	<script>
-		var flips = document.querySelectorAll(".flip");
-		for(var i = 0; i < flips.length; i++){
-		  flips[i].addEventListener("mouseenter", function() {
-		    this.classList.add('virado');
-		  });
-		  flips[i].addEventListener("mouseleave", function() {
-		    this.classList.remove('virado');
-		  });
-		}
-	</script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	<script src="/assets/js/home.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" defer>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" defer>
 </body>
 </html>
