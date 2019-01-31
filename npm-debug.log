@@ -1,0 +1,89 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'gulp',
+1 verbose cli   'gulp-cli' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData gulp
+8 silly fetchPackageMetaData gulp-cli
+9 silly fetchNamedPackageData gulp
+10 silly mapToRegistry name gulp
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/gulp
+14 silly fetchNamedPackageData gulp-cli
+15 silly mapToRegistry name gulp-cli
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/gulp-cli
+19 verbose request uri https://registry.npmjs.org/gulp
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 20:13:20
+22 verbose request id 69742217e9900e41
+23 http request GET https://registry.npmjs.org/gulp
+24 verbose request uri https://registry.npmjs.org/gulp-cli
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 20:13:20
+27 http request GET https://registry.npmjs.org/gulp-cli
+28 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+29 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+30 info attempt registry request try #2 at 20:13:31
+31 http request GET https://registry.npmjs.org/gulp
+32 info attempt registry request try #2 at 20:13:31
+33 http request GET https://registry.npmjs.org/gulp-cli
+34 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+35 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+36 info attempt registry request try #3 at 20:14:31
+37 http request GET https://registry.npmjs.org/gulp
+38 info attempt registry request try #3 at 20:14:31
+39 http request GET https://registry.npmjs.org/gulp-cli
+40 silly fetchPackageMetaData Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+40 silly fetchPackageMetaData     at errnoException (dns.js:26:10)
+40 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:77:26)
+40 silly fetchPackageMetaData  error for gulp { [Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443]
+40 silly fetchPackageMetaData   code: 'ENOTFOUND',
+40 silly fetchPackageMetaData   errno: 'ENOTFOUND',
+40 silly fetchPackageMetaData   syscall: 'getaddrinfo',
+40 silly fetchPackageMetaData   hostname: 'registry.npmjs.org',
+40 silly fetchPackageMetaData   host: 'registry.npmjs.org',
+40 silly fetchPackageMetaData   port: 443 }
+41 silly fetchPackageMetaData Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+41 silly fetchPackageMetaData     at errnoException (dns.js:26:10)
+41 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:77:26)
+41 silly fetchPackageMetaData  error for gulp-cli { [Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443]
+41 silly fetchPackageMetaData   code: 'ENOTFOUND',
+41 silly fetchPackageMetaData   errno: 'ENOTFOUND',
+41 silly fetchPackageMetaData   syscall: 'getaddrinfo',
+41 silly fetchPackageMetaData   hostname: 'registry.npmjs.org',
+41 silly fetchPackageMetaData   host: 'registry.npmjs.org',
+41 silly fetchPackageMetaData   port: 443 }
+42 silly rollbackFailedOptional Starting
+43 silly rollbackFailedOptional Finishing
+44 silly runTopLevelLifecycles Starting
+45 silly runTopLevelLifecycles Finishing
+46 silly install printInstalled
+47 verbose stack Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+47 verbose stack     at errnoException (dns.js:26:10)
+47 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:77:26)
+48 verbose cwd /Workspace/codered-front
+49 error Linux 4.15.0-43-generic
+50 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "gulp" "gulp-cli"
+51 error node v4.2.6
+52 error npm  v3.5.2
+53 error code ENOTFOUND
+54 error errno ENOTFOUND
+55 error syscall getaddrinfo
+56 error network getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+57 error network This is most likely not a problem with npm itself
+57 error network and is related to network connectivity.
+57 error network In most cases you are behind a proxy or have bad network settings.
+57 error network
+57 error network If you are behind a proxy, please make sure that the
+57 error network 'proxy' config is set properly.  See: 'npm help config'
+58 verbose exit [ 1, true ]
