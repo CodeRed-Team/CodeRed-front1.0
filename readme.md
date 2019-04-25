@@ -1,6 +1,7 @@
 # Bootcamp - Frontend
 
-Código gerado no primeiro bootcamp da Codered por [Eduardo Santos](https://github.com/e3duardo) 
+Código gerado no primeiro bootcamp da Codered por [Eduardo Santos](https://github.com/e3duardo).
+
 Trablhando com a lading page do [website](http://codered.online/)
 Durante o evento alguns tópicos foram levantados e alguns sites foram citados. Segue a lista dos links levantados durante o evento. 
 
